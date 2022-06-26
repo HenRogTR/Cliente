@@ -1,8 +1,5 @@
 package pe.com.cliente.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,13 +13,16 @@ public class ClienteServiceImpl implements ClienteService {
 	private ClienteRepository clienteRepository;
 
 	@Override
-	public List<Cliente> buscarPorCodigoUnico(String codigoUnico) {
+	public Cliente buscarXCodigoUnico(String codigoUnico) {
 
-		List<Cliente> listaClienteReturn = new ArrayList<>();
-		clienteRepository.findByCodigoUnico(codigoUnico).forEach(
-				k -> listaClienteReturn.add(Cliente.builder().nombres(k.getNombres()).apellidos(k.getApellidos())
-						.tipoDocumento(k.getTipoDocumento()).numeroDocumento(k.getNumeroDocumento()).build()));
-		return listaClienteReturn;
+		pe.com.cliente.model.Cliente cliente = clienteRepository.findByCodigoUnico(codigoUnico);
+
+		if (cliente == null) {
+			return null;
+		} else {
+			return Cliente.builder().nombres(cliente.getNombres()).apellidos(cliente.getApellidos())
+					.tipoDocumento(cliente.getTipoDocumento()).numeroDocumento(cliente.getNumeroDocumento()).build();
+		}
 	}
 
 }
