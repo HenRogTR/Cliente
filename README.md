@@ -5,6 +5,19 @@ API que permite administrar datos de un cliente
 	1. Permite obtener datos de cliente en base al código único del cliente
 	2. Se inicializa los datos con archivo data.sql en H2
 
+
+
+## Instalación
+	1. Ejecutar el comando docker para montar la imagen en un container.
+	
+```
+docker contaniner run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" 8900:8900 henrogtr/cliente
+```
+
+## Pruebas
+	1. Importar los archivos postman ubicados en **/Cliente/Archivos/Funcionalidad_1/** rama develop
+
+
 ## Datos
 
 |ID|CODIGO_UNICO|NOMBRES|APELLIDOS|TIPO_DOCUMENTO|NUMERO_DOCUMENTO|FECHA_REGISTRO|
@@ -122,6 +135,4 @@ API que permite administrar datos de un cliente
 |111|DNI40000118|YIRIAM LILIAM|OCHOA SABOGAL|DNI|40000118|Fecha de registro|
 |112|DNI40000119|YURANY CATALINA|CIFUENTES MENDEZ|DNI|40000119|Fecha de registro|
 |113|CE40000120|YURI CATALINA|SALAZAR ARISTIZABAL|CE|40000120|Fecha de registro|
-
-## Instalación
 
