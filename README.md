@@ -18,7 +18,7 @@ Donde: cliente1 es nombre de la imagen con versión por defecto, DockerFileReq1 
 	2. Ejecutar el comando docker para montar la imagen en un container.
 	
 ```
-docker contaniner run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" 8900:8900 henrogtr/cliente1
+docker container run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henrogtr/cliente1
 ```
 Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
