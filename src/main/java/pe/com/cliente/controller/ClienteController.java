@@ -32,13 +32,7 @@ public class ClienteController {
 		return cliente == null ? new ResponseEntity<Object>(HttpStatus.NOT_FOUND)
 				: new ResponseEntity<Object>(cliente, HttpStatus.OK);
 
-		// TODO homogenizar nombres de métodos
-		// TODO establecer status de acuerdo a escenarios
-		// TODO producer
-		// TODO aplication.properties para entornos
-
 		// TODO establecer profile en container
-		// TODO seguridad de usuario en container
 	}
 
 }
