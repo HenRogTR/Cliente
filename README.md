@@ -8,11 +8,19 @@ API que permite administrar datos de un cliente
 
 
 ## Instalación
-	1. Ejecutar el comando docker para montar la imagen en un container.
+	1. Ejecutar el comando docker para generar la imagen
+```
+docker image build -t cliente1 -f DockerFileReq1 .
+```
+Donde: cliente1 es nombre de la imagen con versión por defecto, DockerFileReq1 nombre del archivo de construcción de imagen. Los archivos a necesarios son; Cliente-1.0.0.jar, DockerFileReq1 ubicados en raiz de repositorio
+
+	
+	2. Ejecutar el comando docker para montar la imagen en un container.
 	
 ```
-docker contaniner run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" 8900:8900 henrogtr/cliente
+docker contaniner run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" 8900:8900 henrogtr/cliente1
 ```
+Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
 ## Pruebas
 	1. Importar los archivos postman ubicados en **/Cliente/Archivos/Funcionalidad_1/** rama develop
