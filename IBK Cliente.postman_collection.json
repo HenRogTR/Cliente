@@ -10,7 +10,7 @@
 			"name": "Obtener cliente",
 			"item": [
 				{
-					"name": "CE40000006",
+					"name": "00001114",
 					"protocolProfileBehavior": {
 						"disabledSystemHeaders": {}
 					},
@@ -24,20 +24,20 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/CE40000006",
+							"raw": "{{URL_cliente_1}}/api/cliente/00001114",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"api",
 								"cliente",
-								"CE40000006"
+								"00001114"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "CE40000006",
+							"name": "00001114",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -48,14 +48,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{URL_cliente_1}}/api/cliente/CE40000006",
+									"raw": "{{URL_cliente_1}}/api/cliente/00001114",
 									"host": [
 										"{{URL_cliente_1}}"
 									],
 									"path": [
 										"api",
 										"cliente",
-										"CE40000006"
+										"00001114"
 									]
 								}
 							},
@@ -73,7 +73,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Mon, 27 Jun 2022 15:48:42 GMT"
+									"value": "Mon, 27 Jun 2022 21:31:30 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -85,7 +85,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"nombres\": \"ANDREA CATALINA\",\n    \"apellidos\": \"ACERO CARO\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000006\"\n}"
+							"body": "{\n    \"nombres\": \"ALEJANDRO\",\n    \"apellidos\": \"ABONDANO ACEVEDO\",\n    \"tipoDocumento\": \"PTP\",\n    \"numeroDocumento\": \"40000004\"\n}"
 						}
 					]
 				},
@@ -163,7 +163,7 @@
 					]
 				},
 				{
-					"name": "PTP40000108",
+					"name": "00001139",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -174,20 +174,20 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/PTP40000108",
+							"raw": "{{URL_cliente_1}}/api/cliente/00001139",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"api",
 								"cliente",
-								"PTP40000108"
+								"00001139"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "PTP40000108",
+							"name": "00001139",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -198,14 +198,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{URL_cliente_1}}/api/cliente/PTP40000108",
+									"raw": "{{URL_cliente_1}}/api/cliente/00001139",
 									"host": [
 										"{{URL_cliente_1}}"
 									],
 									"path": [
 										"api",
 										"cliente",
-										"PTP40000108"
+										"00001139"
 									]
 								}
 							},
@@ -223,7 +223,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Mon, 27 Jun 2022 15:48:55 GMT"
+									"value": "Mon, 27 Jun 2022 21:31:43 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -235,12 +235,12 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"nombres\": \"PAOLA ANDREA\",\n    \"apellidos\": \"CORREA LARIOS\",\n    \"tipoDocumento\": \"PTP\",\n    \"numeroDocumento\": \"40000108\"\n}"
+							"body": "{\n    \"nombres\": \"DANIEL ANDRÉS\",\n    \"apellidos\": \"CASTIBLANCO SALGADO\",\n    \"tipoDocumento\": \"PTP\",\n    \"numeroDocumento\": \"40000029\"\n}"
 						}
 					]
 				},
 				{
-					"name": "CE40000114",
+					"name": "00001162",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -251,20 +251,20 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/CE40000114",
+							"raw": "{{URL_cliente_1}}/api/cliente/00001162",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"api",
 								"cliente",
-								"CE40000114"
+								"00001162"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "CE40000114",
+							"name": "00001162",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -275,14 +275,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{URL_cliente_1}}/api/cliente/CE40000114",
+									"raw": "{{URL_cliente_1}}/api/cliente/00001162",
 									"host": [
 										"{{URL_cliente_1}}"
 									],
 									"path": [
 										"api",
 										"cliente",
-										"CE40000114"
+										"00001162"
 									]
 								}
 							},
@@ -300,7 +300,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Mon, 27 Jun 2022 15:49:04 GMT"
+									"value": "Mon, 27 Jun 2022 21:32:04 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -312,12 +312,12 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"nombres\": \"SANDRA XIMENA\",\n    \"apellidos\": \"GARCÉS PARRA\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000114\"\n}"
+							"body": "{\n    \"nombres\": \"JUAN CAMILO\",\n    \"apellidos\": \"JIMENEZ CORTES\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000057\"\n}"
 						}
 					]
 				},
 				{
-					"name": "DNI40000087",
+					"name": "00001177",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -328,20 +328,20 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/DNI40000087",
+							"raw": "{{URL_cliente_1}}/api/cliente/00001177",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"api",
 								"cliente",
-								"DNI40000087"
+								"00001177"
 							]
 						}
 					},
 					"response": [
 						{
-							"name": "DNI40000087",
+							"name": "00001177",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -352,14 +352,14 @@
 									}
 								],
 								"url": {
-									"raw": "{{URL_cliente_1}}/api/cliente/DNI40000087",
+									"raw": "{{URL_cliente_1}}/api/cliente/00001177",
 									"host": [
 										"{{URL_cliente_1}}"
 									],
 									"path": [
 										"api",
 										"cliente",
-										"DNI40000087"
+										"00001177"
 									]
 								}
 							},
@@ -377,7 +377,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Mon, 27 Jun 2022 15:49:17 GMT"
+									"value": "Mon, 27 Jun 2022 21:32:14 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -389,7 +389,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"nombres\": \"MARIA CAMILA\",\n    \"apellidos\": \"NIETO BUSTOS\",\n    \"tipoDocumento\": \"DNI\",\n    \"numeroDocumento\": \"40000087\"\n}"
+							"body": "{\n    \"nombres\": \"LAURA NATALIA\",\n    \"apellidos\": \"NOVOA GOMEZ\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000074\"\n}"
 						}
 					]
 				}
