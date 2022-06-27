@@ -31,8 +31,6 @@ public class ClienteController {
 
 		return cliente == null ? new ResponseEntity<Object>(HttpStatus.NOT_FOUND)
 				: new ResponseEntity<Object>(cliente, HttpStatus.OK);
-
-		// TODO establecer profile en container
 	}
 
 }
