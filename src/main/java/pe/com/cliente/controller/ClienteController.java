@@ -25,12 +25,9 @@ public class ClienteController {
 	public ResponseEntity<Object> buscarXCodigo(@PathVariable("codigoUnico") String codigoUnico,
 			HttpServletResponse response) {
 
-		response.setStatus(HttpServletResponse.SC_ACCEPTED);
-
 		Cliente cliente = clienteService.buscarXCodigoUnico(codigoUnico);
 
-		return cliente == null ? new ResponseEntity<Object>(HttpStatus.NOT_FOUND)
-				: new ResponseEntity<Object>(cliente, HttpStatus.OK);
+		return new ResponseEntity<Object>(cliente, HttpStatus.OK);
 	}
 
 }
