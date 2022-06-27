@@ -1,0 +1,379 @@
+{
+	"info": {
+		"_postman_id": "9a5c0eb4-7a80-4196-80cc-a6516ed2084b",
+		"name": "IBK Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17354220"
+	},
+	"item": [
+		{
+			"name": "Obtener cliente",
+			"item": [
+				{
+					"name": "0002232",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/0002232",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"0002232"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "0002232",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/0002232",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"0002232"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:19:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"ARIADNA CER\",\n        \"apellidos\": \"CERON MELENDEZ\",\n        \"tipoDocumento\": \"01\",\n        \"numeroDocumento\": \"5554545\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "OTRO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/OTRO",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"OTRO"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "0002232",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/0002232",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"0002232"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:19:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"ARIADNA CER\",\n        \"apellidos\": \"CERON MELENDEZ\",\n        \"tipoDocumento\": \"01\",\n        \"numeroDocumento\": \"5554545\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "01HT46433296",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/01HT46433296",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"01HT46433296"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "01HT46433296",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/01HT46433296",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"01HT46433296"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:18:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"HENRRI ROGGER SEGUNDO\",\n        \"apellidos\": \"TRUJILLO ROMERO\",\n        \"tipoDocumento\": \"01\",\n        \"numeroDocumento\": \"46433296\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "01EC76761195",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/01EC76761195",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"01EC76761195"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "01EC76761195",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/01EC76761195",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"01EC76761195"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:25:49 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"ELVA RAQUEL\",\n        \"apellidos\": \"CERON MELENDEZ\",\n        \"tipoDocumento\": \"01\",\n        \"numeroDocumento\": \"76761195\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "2512121DWDW",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/2512121DWDW",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"2512121DWDW"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "2512121DWDW",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/2512121DWDW",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"2512121DWDW"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:26:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"ROCIO\",\n        \"apellidos\": \"CHOOQUE ZETA\",\n        \"tipoDocumento\": \"02\",\n        \"numeroDocumento\": \"54545456\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -8,7 +8,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -32,6 +31,14 @@ public class ClienteController {
 
 		return cliente == null ? new ResponseEntity<Object>(HttpStatus.NOT_FOUND)
 				: new ResponseEntity<Object>(cliente, HttpStatus.OK);
+
+		// TODO homogenizar nombres de métodos
+		// TODO establecer status de acuerdo a escenarios
+		// TODO producer
+		// TODO aplication.properties para entornos
+
+		// TODO establecer profile en container
+		// TODO seguridad de usuario en container
 	}
 
 }
