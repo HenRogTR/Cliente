@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "9a5c0eb4-7a80-4196-80cc-a6516ed2084b",
+		"name": "IBK Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17354220"
+	},
+	"item": [
+		{
+			"name": "Obtener cliente",
+			"item": [
+				{
+					"name": "CE40000006",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/CE40000006",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"CE40000006"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CE40000006",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/CE40000006",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"CE40000006"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 15:48:42 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombres\": \"ANDREA CATALINA\",\n    \"apellidos\": \"ACERO CARO\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000006\"\n}"
+						}
+					]
+				},
+				{
+					"name": "OTRO",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/OTRO",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"OTRO"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "0002232",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/cliente/0002232",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"cliente",
+										"0002232"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 23 Jun 2022 20:19:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"nombres\": \"ARIADNA CER\",\n        \"apellidos\": \"CERON MELENDEZ\",\n        \"tipoDocumento\": \"01\",\n        \"numeroDocumento\": \"5554545\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "PTP40000108",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/PTP40000108",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"PTP40000108"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PTP40000108",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/PTP40000108",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"PTP40000108"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 15:48:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombres\": \"PAOLA ANDREA\",\n    \"apellidos\": \"CORREA LARIOS\",\n    \"tipoDocumento\": \"PTP\",\n    \"numeroDocumento\": \"40000108\"\n}"
+						}
+					]
+				},
+				{
+					"name": "CE40000114",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/CE40000114",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"CE40000114"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "CE40000114",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/CE40000114",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"CE40000114"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 15:49:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombres\": \"SANDRA XIMENA\",\n    \"apellidos\": \"GARCÉS PARRA\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000114\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DNI40000087",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/DNI40000087",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"DNI40000087"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DNI40000087",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/DNI40000087",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"DNI40000087"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 27 Jun 2022 15:49:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"nombres\": \"MARIA CAMILA\",\n    \"apellidos\": \"NIETO BUSTOS\",\n    \"tipoDocumento\": \"DNI\",\n    \"numeroDocumento\": \"40000087\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

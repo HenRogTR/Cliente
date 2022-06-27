@@ -1,9 +1,0 @@
-FROM openjdk:8u332-jre-slim
-ENV APP_HOME=/Apps/cliente
-WORKDIR $APP_HOME
-COPY Cliente-1.0.0.jar $APP_HOME/cliente.jar
-RUN groupadd -r clientegrupo && useradd --no-log-init -r clienteuser -g clientegrupo
-RUN chown -R clienteuser:clientegrupo /opt
-USER clienteuser
-ENTRYPOINT ["java","-Duser.timezone=America/Lima","-jar","cliente.jar"]
-EXPOSE 8900
