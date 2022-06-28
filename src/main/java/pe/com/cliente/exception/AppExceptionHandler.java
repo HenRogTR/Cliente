@@ -20,4 +20,10 @@ public class AppExceptionHandler {
 	public ResponseEntity<?> handleException(ClienteExiste exception) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Tipo y número de documento ya existe");
 	}
+
+	@ResponseBody
+	@ExceptionHandler(value = DatoNoValidado.class)
+	public ResponseEntity<?> handleException(DatoNoValidado exception) {
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMensaje());
+	}
 }
