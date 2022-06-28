@@ -406,7 +406,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+							"raw": "{\r\n    \"tipoDocumento\" : \"PTP\",\r\n    \"numeroDocumento\" : \"400000041\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
 						},
 						"url": {
 							"raw": "{{URL_cliente_1}}/cliente/00001175",
@@ -423,7 +423,7 @@
 						{
 							"name": "00001175",
 							"originalRequest": {
-								"method": "POST",
+								"method": "PUT",
 								"header": [
 									{
 										"key": "Content-Type",
@@ -433,17 +433,15 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+									"raw": "{\r\n    \"tipoDocumento\" : \"PTP\",\r\n    \"numeroDocumento\" : \"400000041\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
 								},
 								"url": {
-									"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001175",
+									"raw": "{{URL_cliente_1}}/cliente/00001175",
 									"host": [
 										"{{URL_cliente_1}}"
 									],
 									"path": [
-										"api",
 										"cliente",
-										"actualizar",
 										"00001175"
 									]
 								}
@@ -458,7 +456,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Tue, 28 Jun 2022 05:56:50 GMT"
+									"value": "Tue, 28 Jun 2022 20:59:20 GMT"
 								},
 								{
 									"key": "Keep-Alive",
@@ -490,13 +488,13 @@
 							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
 						},
 						"url": {
-							"raw": "{{URL_cliente_1}}/cliente/00001177",
+							"raw": "{{URL_cliente_1}}/cliente/00001176",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"cliente",
-								"00001177"
+								"00001176"
 							]
 						}
 					},
@@ -544,6 +542,160 @@
 								{
 									"key": "Date",
 									"value": "Tue, 28 Jun 2022 05:57:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Tipo y número de documento ya existe"
+						},
+						{
+							"name": "00001176 tipo documento no existe",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoDocumento\" : \"DNI1\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL_cliente_1}}/cliente/00001177",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"cliente",
+										"00001177"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "29"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 20:59:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Tipo documento DNI1 no existe"
+						},
+						{
+							"name": "00001176 codigo único cliente no existe",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoDocumento\" : \"DNI1\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL_cliente_1}}/cliente/000011771",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"cliente",
+										"000011771"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 21:00:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Cliente 000011771 no existente"
+						},
+						{
+							"name": "00001176 tipo y numero documento ya existe en otro cliente",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL_cliente_1}}/cliente/00001176",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"cliente",
+										"00001176"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 21:00:30 GMT"
 								},
 								{
 									"key": "Connection",

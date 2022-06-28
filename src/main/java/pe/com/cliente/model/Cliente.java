@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.springframework.data.annotation.CreatedDate;
@@ -34,8 +35,8 @@ public class Cliente {
 	@Column(name = "apellidos")
 	private String apellidos;
 
-	@Column(name = "tipo_documento")
-	private String tipoDocumento;
+	@ManyToOne
+	private Documento documento;
 
 	@Column(name = "numero_documento")
 	private String numeroDocumento;

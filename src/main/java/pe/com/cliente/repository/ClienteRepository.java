@@ -9,6 +9,6 @@ public interface ClienteRepository extends CrudRepository<Cliente, Long> {
 
 	Cliente findByCodigoUnico(@Param("codigo_unico") String codigoUnico);
 
-	Cliente findByTipoDocumentoAndNumeroDocumentoAndIdNot(@Param("tipo_documento") String tipoDocumento,
+	Cliente findByDocumentoTipoAndNumeroDocumentoAndIdNot(@Param("tipo_documento") String tipoDocumento,
 			@Param("numero_documento") String numeroDocumento, @Param("id") Long id);
 }

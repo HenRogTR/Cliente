@@ -26,4 +26,11 @@ public class AppExceptionHandler {
 	public ResponseEntity<?> handleException(DatoNoValidado exception) {
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exception.getMensaje());
 	}
+
+	@ResponseBody
+	@ExceptionHandler(value = TipoDocumentoNoExiste.class)
+	public ResponseEntity<?> handleException(TipoDocumentoNoExiste exception) {
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+				.body("Tipo documento " + exception.getMensaje() + " no existe");
+	}
 }
