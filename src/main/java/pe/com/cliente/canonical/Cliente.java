@@ -24,6 +24,6 @@ public class Cliente {
 	private String tipoDocumento;
 
 	@NotNull(message = "Número documento no debe ser nulo o vacío")
-	@NotEmpty(message = "Número no debe ser nulo o vacío")
+	@NotEmpty(message = "Número documento no debe ser nulo o vacío")
 	private String numeroDocumento;
 }
