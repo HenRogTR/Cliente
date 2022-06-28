@@ -328,14 +328,14 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/00001177",
+							"raw": "{{URL_cliente_1}}/api/cliente/00001175",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
 								"api",
 								"cliente",
-								"00001177"
+								"00001175"
 							]
 						}
 					},
@@ -390,6 +390,177 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"nombres\": \"LAURA NATALIA\",\n    \"apellidos\": \"NOVOA GOMEZ\",\n    \"tipoDocumento\": \"CE\",\n    \"numeroDocumento\": \"40000074\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Actualizar cliente",
+			"item": [
+				{
+					"name": "00001175",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+						},
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001175",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"actualizar",
+								"00001175"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "00001175",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001175",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"actualizar",
+										"00001175"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 05:56:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "00001176",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+						},
+						"url": {
+							"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001176",
+							"host": [
+								"{{URL_cliente_1}}"
+							],
+							"path": [
+								"api",
+								"cliente",
+								"actualizar",
+								"00001176"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "00001176",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
+								},
+								"url": {
+									"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001176",
+									"host": [
+										"{{URL_cliente_1}}"
+									],
+									"path": [
+										"api",
+										"cliente",
+										"actualizar",
+										"00001176"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 28 Jun 2022 05:57:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								}
+							],
+							"cookie": [],
+							"body": "Tipo y número de documento ya existe"
 						}
 					]
 				}
