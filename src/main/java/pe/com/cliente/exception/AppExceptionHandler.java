@@ -12,6 +12,12 @@ public class AppExceptionHandler {
 	@ResponseBody
 	@ExceptionHandler(value = ClienteNoEncontrado.class)
 	public ResponseEntity<?> handleException(ClienteNoEncontrado exception) {
-		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exception.getMensaje());
+	}
+
+	@ResponseBody
+	@ExceptionHandler(value = ClienteExiste.class)
+	public ResponseEntity<?> handleException(ClienteExiste exception) {
+		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Tipo y número de documento ya existe");
 	}
 }
