@@ -1,9 +1,9 @@
 package pe.com.cliente.service;
 
-import pe.com.cliente.canonical.Cliente;
+import pe.com.cliente.dto.ClienteDto;
 
 public interface ClienteService {
-	Cliente buscarXCodigoUnico(String codigoUnico);
+	ClienteDto buscarXCodigoUnico(String codigoUnico);
 
-	void actualizarXCodigoUnico(String codigoUnico, Cliente cliente);
+	void actualizarXCodigoUnico(String codigoUnico, ClienteDto cliente);
 }

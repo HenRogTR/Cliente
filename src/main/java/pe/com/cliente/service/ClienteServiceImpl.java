@@ -3,9 +3,10 @@ package pe.com.cliente.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pe.com.cliente.canonical.Cliente;
+import pe.com.cliente.dto.ClienteDto;
 import pe.com.cliente.exception.ClienteExiste;
 import pe.com.cliente.exception.ClienteNoEncontrado;
+import pe.com.cliente.model.Cliente;
 import pe.com.cliente.repository.ClienteRepository;
 
 @Service
@@ -15,26 +16,26 @@ public class ClienteServiceImpl implements ClienteService {
 	private ClienteRepository clienteRepository;
 
 	@Override
-	public Cliente buscarXCodigoUnico(String codigoUnico) {
+	public ClienteDto buscarXCodigoUnico(String codigoUnico) {
 
-		pe.com.cliente.model.Cliente cliente = clienteRepository.findByCodigoUnico(codigoUnico);
+		Cliente cliente = clienteRepository.findByCodigoUnico(codigoUnico);
 
 		if (cliente == null) {
 			throw new ClienteNoEncontrado("Cliente " + codigoUnico + " no existente");
 		}
-		return Cliente.builder().nombres(cliente.getNombres()).apellidos(cliente.getApellidos())
+		return ClienteDto.builder().nombres(cliente.getNombres()).apellidos(cliente.getApellidos())
 				.tipoDocumento(cliente.getTipoDocumento()).numeroDocumento(cliente.getNumeroDocumento()).build();
 
 	}
 
 	@Override
-	public void actualizarXCodigoUnico(String codigoUnico, Cliente cliente) {
-		pe.com.cliente.model.Cliente clienteMod = clienteRepository.findByCodigoUnico(codigoUnico);
+	public void actualizarXCodigoUnico(String codigoUnico, ClienteDto cliente) {
+		Cliente clienteMod = clienteRepository.findByCodigoUnico(codigoUnico);
 
 		if (clienteMod == null) {
 			throw new ClienteNoEncontrado("Cliente " + codigoUnico + " no existente");
 		}
-		pe.com.cliente.model.Cliente clienteDocumento = clienteRepository.findByTipoDocumentoAndNumeroDocumentoAndIdNot(
+		Cliente clienteDocumento = clienteRepository.findByTipoDocumentoAndNumeroDocumentoAndIdNot(
 				cliente.getTipoDocumento(), cliente.getNumeroDocumento(), clienteMod.getId());
 
 		if (clienteDocumento != null) {

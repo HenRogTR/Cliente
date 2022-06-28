@@ -1,4 +1,4 @@
-package pe.com.cliente.canonical;
+package pe.com.cliente.dto;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
@@ -10,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Cliente {
+public class ClienteDto {
 	@NotNull(message = "Nombre no debe ser nulo o vacío")
 	@NotEmpty(message = "Nombre no debe ser nulo o vacío")
 	private String nombres;
