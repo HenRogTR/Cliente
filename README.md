@@ -33,6 +33,14 @@ Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
 ## Datos
 
+Documentos
+|ID|TIPO|FECHA_REGISTRO|
+|----|----|----|
+|1|DNI|Fecha de registro|
+|2|CE|Fecha de registro|
+|3|PTP|Fecha de registro|
+
+Clientes
 |ID|CODIGO_UNICO|NOMBRES|APELLIDOS|TIPO_DOCUMENTO|NUMERO_DOCUMENTO|FECHA_REGISTRO|
 |----|----|----|----|----|----|----|
 |1|00001111|ADRIANA CAROLINA|HERNANDEZ MONTERROZA|DNI|40000001|Fecha de registro|
