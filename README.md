@@ -3,27 +3,32 @@ API que permite administrar datos de un cliente
 ## Versión requerida
 
 	1. Permite obtener datos de cliente en base al código único del cliente
-	2. Se inicializa los datos con archivo data.sql en H2
+	2. Permite actualizar datos de cliente en base al código único del cliente
+		2.1. El código unico cliente enviado debe existir
+		2.2. El nuevo tipo y número de documento no debe existir previamente en BD, excepto el propio dato
+		2.3. Es posible actualizar nombres, apellidos, tipo y número documento
+	3. Se inicializa los datos con archivo data.sql en H2
 
 
 
 ## Instalación
 	1. Ejecutar el comando docker para generar la imagen
 ```
-docker image build -t cliente1 -f DockerFileReq1 .
+docker image build -t cliente2 -f DockerFileReq2 .
 ```
-Donde: cliente1 es nombre de la imagen con versión por defecto, DockerFileReq1 nombre del archivo de construcción de imagen. Los archivos a necesarios son; Cliente-1.0.0.jar, DockerFileReq1 ubicados en raiz de repositorio
+Donde: cliente2 es nombre de la imagen con versión por defecto, DockerFileReq2 nombre del archivo de construcción de imagen. Los archivos a necesarios son; Cliente-2.0.0.jar, DockerFileReq2 ubicados en raiz de repositorio
 
 	
 	2. Ejecutar el comando docker para montar la imagen en un container.
 	
 ```
-docker container run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henrogtr/cliente1
+docker container run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henrogtr/cliente2
 ```
 Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
 ## Pruebas
-	1. Importar los archivos postman ubicados en rama develop
+
+	1. Importar los archivos postman ubicados en rama develop-f2 (raiz sistema)
 
 
 ## Datos
