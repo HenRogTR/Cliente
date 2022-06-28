@@ -24,12 +24,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/00001114",
+							"raw": "{{URL_cliente_1}}/cliente/00001114",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
 								"00001114"
 							]
@@ -101,12 +100,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/OTRO",
+							"raw": "{{URL_cliente_1}}/cliente/OTRO",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
 								"OTRO"
 							]
@@ -174,12 +172,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/00001139",
+							"raw": "{{URL_cliente_1}}/cliente/00001139",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
 								"00001139"
 							]
@@ -251,12 +248,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/00001162",
+							"raw": "{{URL_cliente_1}}/cliente/00001162",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
 								"00001162"
 							]
@@ -328,12 +324,11 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/00001175",
+							"raw": "{{URL_cliente_1}}/cliente/00001175",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
 								"00001175"
 							]
@@ -401,7 +396,7 @@
 				{
 					"name": "00001175",
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -414,14 +409,12 @@
 							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
 						},
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001175",
+							"raw": "{{URL_cliente_1}}/cliente/00001175",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
-								"actualizar",
 								"00001175"
 							]
 						}
@@ -484,7 +477,7 @@
 				{
 					"name": "00001176",
 					"request": {
-						"method": "POST",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -497,15 +490,13 @@
 							"raw": "{\r\n    \"tipoDocumento\" : \"DNI\",\r\n    \"numeroDocumento\" : \"46433296\",\r\n    \"nombres\" : \"HENRRI ROGGER SEGUNDO\",\r\n    \"apellidos\" : \"TRUJILLO ROMERO\"\r\n}"
 						},
 						"url": {
-							"raw": "{{URL_cliente_1}}/api/cliente/actualizar/00001176",
+							"raw": "{{URL_cliente_1}}/cliente/00001177",
 							"host": [
 								"{{URL_cliente_1}}"
 							],
 							"path": [
-								"api",
 								"cliente",
-								"actualizar",
-								"00001176"
+								"00001177"
 							]
 						}
 					},
