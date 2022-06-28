@@ -23,7 +23,7 @@ docker container run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henro
 Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
 ## Pruebas
-	1. Importar los archivos postman ubicados en **/Cliente/Archivos/Funcionalidad_1/** rama develop
+	1. Importar los archivos postman ubicados en rama develop
 
 
 ## Datos
