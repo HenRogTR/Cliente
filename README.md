@@ -7,24 +7,40 @@ API que permite administrar datos de un cliente
 		2.1. El código unico cliente enviado debe existir
 		2.2. El nuevo tipo y número de documento no debe existir previamente en BD, excepto el propio dato
 		2.3. Es posible actualizar nombres, apellidos, tipo y número documento
-	3. Se inicializa los datos con archivo data.sql en H2
+	3. Se inicializa los las tablas y datos con archivo .sql en base de datos postgres
 
 
 
-## Instalación
-	1. Ejecutar el comando docker para generar la imagen
+## Instalación Base de datos
+	1. Ejecutar el comando docker para generar la imagen de postgres
 ```
-docker image build -t cliente2 -f DockerFileReq2 .
+docker image build -t cliente3postgres -f DockerFileReq3Postgre .
 ```
-Donde: cliente2 es nombre de la imagen con versión por defecto, DockerFileReq2 nombre del archivo de construcción de imagen. Los archivos a necesarios son; Cliente-2.0.0.jar, DockerFileReq2 ubicados en raiz de repositorio
+Donde: cliente3postgres es nombre de la imagen con versión por defecto, DockerFileReq3Postgre nombre del archivo de construcción de imagen. Los archivos a necesarios son; PostgreReq3.sql, DockerFileReq3Postgre ubicados en raiz de repositorio
 
+	2. Ejecutar comando para creación de red
+```
+docker network create ibkred
+```
 	
-	2. Ejecutar el comando docker para montar la imagen en un container.
+	3. Ejecutar el comando docker para montar la imagen postgres en un container.
 	
 ```
-docker container run --rm -it -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henrogtr/cliente2
+docker container run -it --rm --net=ibkred -p 5432:5432 -e POSTGRES_USER=userbe -e POSTGRES_PASSWORD=123456 -e POSTGRES_DB=ibkdb --name ibkdb henrogtr/cliente3postgres:latest
 ```
-Donde: henrogtr es el usuario (docker hub) desde donde se descargará la imagen
+Donde: ibkred es nombre de la red, userbe usuario de bd, ibkdb nombre de la base de datos, henrogtr es el usuario (docker hub) desde donde se descargará la imagen
+
+	4. Ejecutar el comando docker para construir la imagen conteniendo la api.
+```	
+docker image build -t cliente3jar -f DockerFileReq3JAR .
+```
+Donde: cliente3jar es nombre de la imagen generada, DockerFileReq3JAR nombre del archivo plano para generar la imagenn. Los archivos a usar son: Cliente-3.0.0.jar y DockerFileReq3JAR ubicados en raiz de proyecto
+
+	5. Ejecutar comando docker para montar la imagen cliente3jar
+```
+docker container run --rm -it --net=ibkred -e "SPRING_PROFILES_ACTIVE=dev" -p 8900:8900 henrogtr/cliente3jar
+```
+Donde: ibkred es nombre de la red dicha red es la misma con la que se montó la imagen de la base de datos, henrogtr es el usuario (docker hub) desde donde se descargará la imagen
 
 ## Pruebas
 
